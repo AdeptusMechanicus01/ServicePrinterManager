@@ -1,0 +1,13 @@
+# ninja log v6
+4	564	7734907809872765	ServicePrinterManager_autogen/timestamp	7c9f0d327771790a
+4	564	7734907809872765	ServicePrinterManager_autogen/mocs_compilation.cpp	7c9f0d327771790a
+4	564	7734907809872765	E:/project/ServicePrinterManager/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/ServicePrinterManager_autogen/timestamp	7c9f0d327771790a
+4	564	7734907809872765	E:/project/ServicePrinterManager/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/ServicePrinterManager_autogen/mocs_compilation.cpp	7c9f0d327771790a
+568	607	7734907810853331	ServicePrinterManager_autogen/EWIEGA46WW/qrc_resources.cpp	88197abfe042352f
+568	607	7734907810853331	E:/project/ServicePrinterManager/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/ServicePrinterManager_autogen/EWIEGA46WW/qrc_resources.cpp	88197abfe042352f
+615	663	7734907810988333	CMakeFiles/ServicePrinterManager.dir/repairrecord.cpp.obj	791020cd89b851a2
+617	670	7734907811013339	CMakeFiles/ServicePrinterManager.dir/ServicePrinterManager_autogen/EWIEGA46WW/qrc_resources.cpp.obj	157b19705cf07b23
+608	2848	7734907810913330	CMakeFiles/ServicePrinterManager.dir/ServicePrinterManager_autogen/mocs_compilation.cpp.obj	98d3062d4af4ffb1
+610	3130	7734907810938332	CMakeFiles/ServicePrinterManager.dir/main.cpp.obj	a81a744c9a0dc14d
+612	3411	7734907810958330	CMakeFiles/ServicePrinterManager.dir/widget.cpp.obj	6ae45b05dd4912be
+3411	3586	7734907838949650	ServicePrinterManager.exe	65e3d475b8cd6c5c
