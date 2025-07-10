@@ -9,7 +9,7 @@ Widget::Widget(QWidget *parent)
     tableView_sql = ui->tableView_sql;
     //Создание таблицы на 6 ячеик
     model = new QStandardItemModel(0 ,6 ,this);
-    model->setHorizontalHeaderLabels({"Дата","КлиентОрганизация","Название модели"
+    model->setHorizontalHeaderLabels({"Дата","Клиент|Организация","Название модели"
                                     ,"Диагностика","Запчасти","Сумма ремонта"});
     //Применяет модель к таблицам из UI
     ui->tableView_sql->setModel(model);

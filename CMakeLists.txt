@@ -20,6 +20,8 @@ set(PROJECT_SOURCES
 qt_add_executable(ServicePrinterManager
     MANUAL_FINALIZATION
     ${PROJECT_SOURCES}
+    addrepairdialog.h addrepairdialog.cpp addrepairdialog.ui
+
 )
 
 target_link_libraries(ServicePrinterManager PRIVATE Qt6::Widgets)
