@@ -1,5 +1,6 @@
 #include "widget.h"
 #include "./ui_widget.h"
+#include "addrepairdialog.h"
 
 Widget::Widget(QWidget *parent)
     : QWidget(parent)
@@ -26,10 +27,37 @@ Widget::Widget(QWidget *parent)
     model->appendRow(row);  // Добавляем строку
 
     tableView_sql->setModel(model);  // Связываем
+
 }
 
 Widget::~Widget()
 {
     delete ui;
 }
+
+
+void Widget::on_pushButton_clicked()
+{
+    // Создание и открытие диалога
+    AddRepairDialog dialog(this);
+
+    // Если пользователь нажал "Добавить" (Accepted)
+    if(dialog.exec() == QDialog::Accepted)
+    {
+        // Создаем список элементов для новой строки
+        QList<QStandardItem*> rowItems;
+
+        // Преобразуем данные в элементы таблицы
+        rowItems << new QStandardItem(dialog.date().toString("dd.MM.yyyy"))
+                 << new QStandardItem(dialog.client())
+                 << new QStandardItem(dialog.model())       // Обрати внимание: у тебя model() вместо printer()
+                 << new QStandardItem(dialog.diagnostic())  // Было repair()
+                 << new QStandardItem(dialog.zip())         // Было parts()
+                 << new QStandardItem(QString::number(dialog.sum(), 'f', 2));
+
+        // Добавляем строку в модель
+        model->appendRow(rowItems);
+    }
+}
+
 
