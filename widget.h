@@ -4,6 +4,9 @@
 #include <QWidget>
 #include<QTableView>
 #include<QStandardItem>
+#include <QSqlDatabase>
+#include <QSqlError>
+#include <QSqlQuery>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -20,11 +23,13 @@ public:
     ~Widget();
 
 private slots:
-    void on_pushButton_clicked();
+    void AddARowToATable();
 
 private:
     Ui::Widget *ui;
     QTableView *tableView_sql;
     QStandardItemModel *model;
+    QSqlDatabase db;
+    void initDatabase();
 };
 #endif // WIDGET_H

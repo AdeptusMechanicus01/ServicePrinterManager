@@ -25,7 +25,8 @@ qt_add_executable(ServicePrinterManager
 )
 
 target_link_libraries(ServicePrinterManager PRIVATE Qt6::Widgets)
-
+find_package(Qt6 COMPONENTS Sql REQUIRED)
+target_link_libraries(ServicePrinterManager PRIVATE Qt6::Sql)
 # УБИРАЕМ ЛИШНИЕ УСЛОВИЯ ДЛЯ Qt5/ANDROID/IOS
 set_target_properties(ServicePrinterManager PROPERTIES
     WIN32_EXECUTABLE TRUE

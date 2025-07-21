@@ -3,6 +3,8 @@
 
 #include <QDialog>
 #include <QDate>
+#include <QPushButton>
+#include <QMessageBox>
 
 
 namespace Ui {
@@ -22,6 +24,9 @@ public:
     QString diagnostic()const;
     QString zip()const;
     double sum() const;
+private slots:
+    void SaveARowToATable();
+
 private:
     Ui::AddRepairDialog *ui;
 };
